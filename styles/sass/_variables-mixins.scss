@@ -1,0 +1,41 @@
+$green: #C3DAB7;
+$grey: #F6F6F6;
+
+@mixin body-font {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.3px;
+}
+
+@mixin nav-font {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 0.3px;
+}
+
+@mixin button-font {
+    font-family: 'Montserrat'
+    sans-serif;
+    font-weight: 400;
+    text-align: center;
+    line-height: 2.4rem;
+    letter-spacing: 0.7px;
+}
+
+@mixin h1-header-font {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 3.7rem;
+    text-align: center;
+    letter-spacing: 0.9px;
+}
+
+@mixin header-font {
+    font-family: 'Montserrat'
+    sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 2.4rem;
+    letter-spacing: 1.8px;
+}
