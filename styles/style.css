@@ -642,15 +642,6 @@ h1 {
   background-size: cover;
 }
 
-@media (max-width: 740px) {
-  body {
-    background: green;
-  }
-  header nav ul {
-    display: none;
-  }
-}
-
 footer {
   height: 60vh;
   padding-top: 115px;
