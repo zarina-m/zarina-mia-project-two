@@ -1,3 +1,7 @@
+.home-page header{ 
+    height:90vh;
+}
+
 .small-wrapper {
     display: flex;
     max-width: 750px;
@@ -23,33 +27,92 @@
 }
 
 .about .text-wrapper {
+    @include body-font;
     width: 50%;
     text-align: center;
+    font-weight: 600;
+}
+
+.about h3, .services h3 {
+    @include header-font;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.about p {
+    padding: 0px 50px;
 }
 
 .slideshow {
-    height: 70vh;
+    height: 65vh;
+    padding: 100px 0px;
     display: flex;
     flex-wrap: wrap;
+}
+
+.slideshow .medium-wrapper div {
+    display: inline-block;
+    width: 50%;
+}
+
+.slideshow .medium-wrapper .arrow {
+    width: 24%;
+}
+
+.slideshow .medium-wrapper .arrow i {
+    font-size:1.8rem
+}
+
+.slideshow .medium-wrapper div:nth-child(2) {
+    text-align: center;
+}
+
+.slideshow .medium-wrapper .arrow:nth-child(3) {
+    text-align: right;
+}
+
+.slideshow .medium-wrapper img {
+    width:225px;
+}
+
+.slideshow .medium-wrapper .text-wrapper {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.slideshow p {
+    @include body-font;
+    color: #777777;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-style: italic;
+    padding: 25px 150px;
 }
 
 .slideshow img {
     border-radius: 145px;
 }
 
-.slideshow .wrapper div {
-    width: 33.3333%;
-}
-
-.slideshow .wrapper .text-wrapper {
-    width: 60%;
-}
-
 
 .services {
-    height: 90vh;
+    position: relative;
+    height: 85vh;
     background-image: url(../creative-assets/home-4.jpeg);
+    background-size: cover;
 }
+
+.services::after {
+    height: 50px;
+    width: 1px;
+    background-color: #999;
+    bottom: -50px;
+    display: block;
+    content: '';
+    right: 50%;
+    position: absolute;
+} 
 
 .services .wrapper {
     display: flex;
@@ -58,7 +121,7 @@
     align-items: center;
 }
 
-.services .wrapper div {
+.services .wrapper > div {
     width: 50%;
 }
 
@@ -70,18 +133,154 @@
 .services li {
     width: 50%;
 }
+.services li div {
+    display: inline-block;
+}
+.services li div:first-child {
+    width:20%;
+}
+
+.services li p {
+
+    font-size:.7rem;
+    
+}
+
+.services i {
+    font-size:1.5rem;
+}
+
+.services h3 {
+    display: inline-block;
+}
+.services i {
+  display: inline-block;
+    padding: 0.5em 0.4em;
+    border: 1px solid #000;
+    border-radius: 135px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+
+.team {
+    height: 85vh;
+    padding: 25px 0;
+}
+
+.team h2 {
+    text-align: center;
+    margin: 50px 0px 25px 0px;
+    @include header-font;
+    text-transform: uppercase;
+    font-size:1.1rem;
+}
 
 .medium-wrapper {
-    display: flex;
-    max-width: 1000px;
     margin: 0 auto;
-    flex-wrap: wrap;
+    max-width: 950px;
 }
 
-.team .medium-wrapper div {
-    flex-grow: 2;
+.home-page .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    grid-gap: 20px;
+    margin-top:50px;
 }
 
-.team .medium-wrapper img {
-    flex-grow: 1;
+.home-page  .grid div {
+    grid-column-start: span 2;
+    background: $grey;
+    padding: 80px 25px 25px 25px;
+}
+
+.home-page  .grid h4 {
+    @include header-font;
+    font-size:.9rem;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.home-page  .grid p {
+    @include body-font;
+}
+
+
+.home-page  .grid>p {
+    @include body-font;
+    text-transform: uppercase;
+    margin: auto;
+    font-size:0.9rem;
+    text-align: center;
+    padding:40px;
+}
+
+
+.team img {
+    width: 100%;
+}
+
+
+.portfolio {
+    display: flex;
+    height: 75vh;
+}
+
+.portfolio .infobox {
+    text-align: center;
+}
+
+.portfolio h2 {
+    @include header-font;
+    font-size: 1rem;
+}
+
+.portfolio p {
+    @include body-font;
+}
+
+.portfolio button {
+    margin-top:25px;
+    background:$white;
+    color: black;
+    padding:15px 20px;
+    border:none;
+    text-transform: uppercase;
+    @include body-font;
+    font-weight: 600;
+}
+
+.portfolio .infobox {
+    width: 50%;
+    height: 100%;
+    padding: 15% 10% 10%;
+    background-color: $green;
+
+}
+
+.portfolio .imagebox {
+    height: 100%;
+    width: 50%;
+    background-image: url(../creative-assets/home-10.jpeg);
+    background-size: cover;
+}
+
+// @media (max-width: 768px) {
+//     .nav ul {
+//         display: none;
+//     }
+
+// }
+
+@media (max-width: 740px) {
+
+    body {
+        background: green;
+    }
+
+     header nav ul {
+         display: none;
+     }
+    
 }

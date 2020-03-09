@@ -4,9 +4,21 @@
 }
 
 header {
-    height: 90vh;
+    height: 78vh;
     background-image: url(../creative-assets/home-1.jpeg);
     background-size: cover;
+    padding-top:40px;
+}
+
+header::after {
+    height: 125px;
+    width: 1px;
+    background-color: #999999;
+    display: block;
+    content: '';
+    bottom: 30px;
+    right: 50%;
+    position: absolute;
 }
 
 header nav {
@@ -20,7 +32,39 @@ header nav ul {
     justify-content: space-around;
 }
 
+header nav ul li {
+    @include nav-font;
+    margin:auto;
+}
+
+.strikethrough{
+    text-decoration:line-through;
+}
+
+
 h1 {
-    flex: 1;
-    text-align: center;
+    @include large-header-font;
+    font-size: 1.8rem;
+    flex: 2;
+}
+
+.hamburger-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 25px;
+    display: none;
+    font-size: 3rem;
+}
+
+@media (max-width: 740px) {
+
+     header nav ul {
+         display: none;
+     }
+
+     .hamburger-menu {
+         display:block;
+     }
+    
 }

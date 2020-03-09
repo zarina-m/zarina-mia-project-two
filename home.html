@@ -6,18 +6,21 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/fontawesome-free-5.12.1-web/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans&display=swap" rel="stylesheet">
-    <title>Home</title>
+    <title>Creative | Home</title>
 </head>
 <body class="home-page">
     <header>
-        <div class="wrapper">
+        <div class="medium-wrapper">
+            <nav class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </nav>
             <nav>
                 <ul>
-                    <li>
-                        Home
+                    <li class="strikethrough">
+                        <a href="home.html">Home</a>
                     </li>
                     <li>
-                        Blog
+                        <a href="blog.html">Blog</a>
                     </li>
                     <li>
                         Portfolio
@@ -29,13 +32,13 @@
                         Shop
                     </li>
                     <li>
-                        Contact
+                        <a href="contact.html">Contact</a>
                     </li>
                     <li>
-                        Search
+                        <i class="fas fa-search"></i>
                     </li>
                     <li>
-                        Shopping Bag
+                        <i class="fas fa-shopping-bag"></i>
                     </li>
                 </ul>
             </nav>
@@ -45,7 +48,7 @@
         <div class="small-wrapper">
             <div class="image-wrapper">
                 <img src="creative-assets/home-2.jpeg" alt="Computer desk with potted plant and calendar.">
-                <img src="creative-assets/home-circle-text.png">
+                <img src="creative-assets/home-circle-text.png" alt="Text that reads Branding and Website Pros">
             </div>
             <div class="text-wrapper">
                 <h3>Branding</h3>
@@ -59,18 +62,18 @@
         </div>
     </section>
     <section class="slideshow">
-        <div class="wrapper">
-            <div>
-                <i class="fas fa-less-than"></i>
+        <div class="medium-wrapper">
+            <div class="arrow">
+                <i class="fas fa-chevron-left"></i></i>
             </div>
             <div>
-                <img src="creative-assets/home-3.jpeg">
+                <img src="creative-assets/home-3.jpeg" alt="Photo of shirtless man">
             </div>
-            <div>
-                <i class="fas fa-greater-than"></i>
+            <div class="arrow">
+                <i class="fas fa-chevron-right"></i></i>
             </div>
             <div class="text-wrapper">
-                <p>Ecosystem iPad disruptive social media low hanging fruit stealth launch party handshake market branding. Pitch agile development business plan stealth channels prototype mass market product management value proposition startup strategy. PRoduct management early adopters user experience metrics advisor gamification responsive web design hackathon termsheet backing series.
+                <p>Ecosystem iPad disruptive social media low hanging fruit stealth launch party handshake market branding. Pitch agile development business plan stealth channels prototype mass market product management value proposition startup strategy. Product management early adopters user experience metrics advisor gamification responsive web design hackathon termsheet backing series.
             </p>
             </div>
         </div>
@@ -82,31 +85,64 @@
             <div>
                 <ul>
                     <li>
-                        <h3>Unique Design</h3> 
-                        Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</li>
+                        <div>
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <div>
+                            <h3>Unique Design</h3> 
+                            <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                        </div>
+                    </li>
                     <li>
+                        <div>
+                            <i class="fas fa-map-pin"></i>
+                        </div>
                         <h3>SEO Marketing</h3>
-                        Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</li>
-                    <li><h3>Retina Ready</h3>
-                        Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</li>
-                    <li>
-                        <h3>Ecommerce Ready</h3>
-                        Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.
+                        <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
                     </li>
                     <li>
-                        <h3>Advanced Options</h3>
-                        Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.
+                        <div>
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <div>
+                            <h3>Retina Ready</h3>
+                            <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                        </div>
                     </li>
                     <li>
-                        <h3>Customizable</h3>
-                    Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.
-                </li>
+                        <div>
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <div>
+                            <h3>Ecommerce Ready</h3>
+                            <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="fas fa-sliders-h"></i>
+                        </div>
+                        <div>
+                            <h3>Advanced Options</h3>
+                            <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="far fa-smile"></i>
+                        </div>
+                        <div>
+                            <h3>Customizable</h3>
+                            <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
     </section>
     <section class="team">
-        <div class="medium-wrapper">
+        <h2>Meet our team</h2>
+        <div class="medium-wrapper grid">
             <div><h4>Team Players</h4> 
                 <p>Pitch client interaction design ownership disruptive leverage prototype conversion. Deployment validation gen-z disruptive paradigm shift churn rate niche market graphical user interface.    
                 </p>
@@ -116,33 +152,56 @@
             <img src="creative-assets/home-7.jpeg" alt="Headshot of woman with tattoo sleeve">
             <img src="creative-assets/home-8.jpeg" alt="Headshot of man in black shirt">
             <img src="creative-assets/home-9.jpeg" alt="Headshot of woman with glasses">
+            <p>Want to work with us !</p>
         </div>
-
     </section>
 
     <section class="portfolio">
-        <div class="left">
+        <div class="infobox">
             <h2>Drop us a line</h2>
             <p>Pitch client interaction design owenership disruptive leverage prototype conversion. Deployment validation gen-z disruptive paradigm shift churn rate niche market graphical user interface.
             </p>
             <button>View Portfolio</button>
         </div>
-        <div class="right">
-            <img src="creative-assets/home-10.jpeg" alt="Top view of iPhone and folder on table">
+        <div class="imagebox">
         </div>
     </section>
     <footer>
-        <div>
-            <h3>Contact Us</h3>
-
+        <div class="medium-wrapper">
+            <div>
+                <h3>Contact Us</h3>
+                <span>6591 Orchard Street, Toronto, Ontario</span>
+                <span>Email: contact@creative.com</span>
+                <span>Phone 01: 123 456 7890</span>
+                <span>Phone 02: 345 678 9101</span>
+                <span>Fax: 643 6543 898</span>
+                <div class="icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div>
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li>Conversion hackathon partner</li>
+                    <li>Network channels entrepreneur</li>
+                    <li>Return on investment creative</li>
+                    <li>Assets interaction design venture</li>
+                    <li>Infographic learning curve</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Subscribe Now</h3>
+                <label for="email">Signup for emails and notifications below.</label>
+                <button value="">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </button>
+                <input id="email" type="email" placeholder="Enter your email">
+            </div>
         </div>
-        <div>
-            <h3>Recent Posts</h3>
-
-        </div>
-        <div>
-            <h3>Subscribe Now</h3>
-
+        <div class="footer-ending">
+            <h3>Creative Agency</h3>
         </div>
     </footer>
 </body>

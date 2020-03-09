@@ -1,0 +1,137 @@
+.blog-page header {
+    background-image: url(../creative-assets/blog-1.jpeg);
+}
+
+.blog-page header::after {
+    display: none;
+}
+
+.blog-post {
+    padding-top: 100px;
+}
+
+.blog-post h2 {
+    @include large-header-font;
+    font-size:3rem;
+    text-align: left;
+    margin-bottom:15px;
+}
+
+.blog-page span, .blog-page p, .blog-page h4, .blog-page li {
+    @include body-font;
+}
+
+.blog-post h4 {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.blog-post .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 20px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 10px;
+    margin:50px 0;
+}
+
+.blog-post .grid div {
+    width:100%;
+}
+
+.blog-post .grid div:nth-child(2) {
+    grid-column-start: span 2;
+}
+
+.blog-post img {
+    border-radius: 140px;
+    width: 75px;;
+}
+
+.blog-post p {
+    padding: 10px 0px 10px 0px;
+}
+
+.blog-post ul {
+    display: flex;
+}
+
+.blog-post li {
+    padding: 10px 10px 10px 0px;
+    text-transform: uppercase;
+}
+
+.blog-page h3 {
+    border-bottom: 1px solid #999999;
+
+}
+
+.blog-gallery {
+    padding-top: 50px;
+}
+
+.blog-gallery h3, .blog-comment-view h3 {
+    @include header-font;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+}
+
+.blog-gallery span {
+    text-transform: uppercase;
+}
+.blog-gallery img {
+    width: 100%;
+}
+
+.blog-gallery .grid {
+    margin: 50px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+}
+
+.comment {
+    background-color: $grey;
+    width: 100%;
+    padding: 25px;
+    margin-left: 20px;
+}
+
+.comment span:first-child {
+    font-weight:600;
+    text-transform: uppercase;
+}
+
+.tip-left {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    background: transparent;
+    border: 10px solid $grey;
+    top: 10px;
+    left: 0px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;  
+}
+
+.comment-wrapper {
+    display: flex;
+    width: 100%;
+    margin: 25px 0;
+}
+
+.message {
+    width:100%;
+    min-height: 100px;
+    position: relative;
+}
+
+.blog-page footer h3 {
+    border: none;
+}
